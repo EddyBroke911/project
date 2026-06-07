@@ -107,6 +107,96 @@ p {
 @keyframes load {
     100% { width: 100%; }
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px;
+    }
+    
+    .loader {
+        width: 45px;
+        height: 45px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 25px;
+        margin: 20px auto;
+    }
+    
+    .loader {
+        width: 40px;
+        height: 40px;
+        border-width: 3px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    
+    p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    
+    .progress {
+        margin-top: 12px;
+        height: 5px;
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    .card {
+        padding: 20px;
+    }
+    
+    .loader {
+        width: 35px;
+        height: 35px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 11px;
+    }
+}
+
 </style>
 
 </head>

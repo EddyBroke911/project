@@ -134,6 +134,120 @@ a {
     font-size: 12px;
     color: #94a3b8;
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 420px;
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .input-group input {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card {
+        width: 95%;
+        padding: 18px;
+        margin: 20px auto;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .input-group {
+        margin-top: 12px;
+    }
+    
+    .input-group input {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .input-group label {
+        font-size: 11px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 14px;
+        min-height: 44px;
+        margin-top: 12px;
+    }
+    
+    button:hover {
+        transform: scale(1.02);
+    }
+    
+    .msg {
+        font-size: 13px;
+    }
+    
+    .show {
+        font-size: 11px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    .card {
+        width: 95%;
+        padding: 14px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    .input-group input {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 11px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
 </style>
 </head>
 

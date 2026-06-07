@@ -159,6 +159,167 @@ body::before {
     text-decoration: none;
     font-size: 12px;
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    body::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .header {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .card {
+        margin: 12px;
+        padding: 15px;
+    }
+    
+    .grid {
+        padding: 0 10px;
+        gap: 8px;
+    }
+    
+    .box {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar a {
+        font-size: 11px;
+    }
+    
+    .btn {
+        padding: 11px;
+        font-size: 13px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        padding-bottom: 80px;
+        font-size: 14px;
+    }
+    
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .header {
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .card {
+        margin: 10px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+    
+    .card h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+    
+    .grid {
+        flex-wrap: wrap;
+        padding: 0 8px;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .box {
+        flex: 1;
+        min-width: calc(50% - 4px);
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .box h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .box p {
+        font-size: 11px;
+    }
+    
+    .navbar {
+        padding: 8px 0;
+        gap: 2px;
+    }
+    
+    .navbar a {
+        font-size: 10px;
+        padding: 0 2px;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .btn {
+        padding: 11px;
+        font-size: 12px;
+        min-height: 44px;
+    }
+    
+    .btn:hover {
+        transform: scale(1.02);
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    body {
+        padding-bottom: 70px;
+    }
+    
+    .header {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .card {
+        margin: 8px;
+        padding: 10px;
+    }
+    
+    .grid {
+        flex-direction: column;
+    }
+    
+    .box {
+        min-width: 100%;
+        padding: 10px;
+    }
+    
+    .navbar a {
+        font-size: 9px;
+    }
+}
 </style>
 
 </head>

@@ -150,6 +150,155 @@ button:hover {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    body::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .header {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .container {
+        padding: 12px;
+        padding-bottom: 100px;
+    }
+    
+    .upload-box {
+        padding: 30px;
+    }
+    
+    input, select {
+        padding: 11px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        font-size: 14px;
+        padding-bottom: 80px;
+    }
+    
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .header {
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .upload-box {
+        padding: 25px;
+        border-radius: 15px;
+    }
+    
+    .upload-box h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .upload-box p {
+        font-size: 12px;
+    }
+    
+    .preview {
+        margin-top: 12px;
+    }
+    
+    .preview img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+    
+    input, select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        min-height: 44px;
+        margin-top: 12px;
+    }
+    
+    button:hover {
+        transform: scale(1.02);
+    }
+    
+    .navbar {
+        padding: 8px 0;
+    }
+    
+    .navbar a {
+        font-size: 10px;
+        padding: 0 2px;
+    }
+    
+    .success {
+        font-size: 13px;
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    body {
+        padding-bottom: 70px;
+    }
+    
+    .header {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 8px;
+    }
+    
+    .upload-box {
+        padding: 20px;
+    }
+    
+    input, select {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    button {
+        padding: 11px;
+        font-size: 13px;
+    }
+}
 </style>
 
 </head>

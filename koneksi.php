@@ -1,9 +1,9 @@
 <?php
 // KONFIGURASI DATABASE
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "percetakan";
+$host = "sql101.infinityfree.com";
+$user = "if0_42105858";
+$pass = "FXVnIMEzELo3l";
+$db   = "if0_42105858_percetakan";
 
 // BUAT KONEKSI
 $conn = mysqli_connect($host, $user, $pass, $db);

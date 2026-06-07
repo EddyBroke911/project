@@ -136,6 +136,140 @@ body::before {
     text-decoration: none;
     font-size: 12px;
 }
+
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    body::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .header {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .card {
+        margin: 12px;
+        padding: 15px;
+    }
+    
+    .status {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .navbar a {
+        font-size: 11px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        font-size: 14px;
+        padding-bottom: 80px;
+    }
+    
+    body::before {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .header {
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .card {
+        margin: 10px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+    
+    .card p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    
+    .status {
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 11px;
+        display: inline-block;
+        margin: 5px 0;
+    }
+    
+    .file {
+        font-size: 12px;
+        word-break: break-all;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 9px 12px;
+        font-size: 11px;
+        min-height: auto;
+    }
+    
+    .navbar {
+        padding: 8px 0;
+    }
+    
+    .navbar a {
+        font-size: 10px;
+        padding: 0 2px;
+    }
+    
+    .empty {
+        margin-top: 40px;
+        font-size: 13px;
+    }
+    
+    .empty h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    body {
+        padding-bottom: 70px;
+    }
+    
+    .header {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .card {
+        margin: 8px;
+        padding: 10px;
+    }
+    
+    .btn {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+    
+    .navbar a {
+        font-size: 9px;
+    }
+}
 </style>
 
 </head>

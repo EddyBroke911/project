@@ -273,6 +273,191 @@ select{
     font-size:12px;
 }
 
+/* ========== MOBILE RESPONSIVE ========== */
+
+/* TABLETS (768px and below) */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 100px;
+    }
+    
+    body::before {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .header {
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    .card {
+        margin: 12px;
+        padding: 15px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 12px;
+    }
+    
+    .box {
+        padding: 30px 15px;
+    }
+    
+    .box h2 {
+        font-size: 40px;
+    }
+    
+    table tr td {
+        padding: 12px;
+        font-size: 12px;
+    }
+    
+    .navbar a {
+        font-size: 11px;
+    }
+}
+
+/* MOBILE (480px and below) */
+@media (max-width: 480px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+        font-size: 13px;
+        padding-bottom: 90px;
+    }
+    
+    body::before {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .header {
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .card {
+        margin: 10px;
+        padding: 12px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .card h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .card h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .card p {
+        font-size: 12px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 8px;
+    }
+    
+    .box {
+        padding: 20px 10px;
+        border-radius: 12px;
+    }
+    
+    .box h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    
+    .box p {
+        font-size: 11px;
+    }
+    
+    .btn {
+        padding: 11px;
+        font-size: 12px;
+        min-height: 40px;
+        margin-top: 8px;
+    }
+    
+    .status {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    table tr td {
+        padding: 10px;
+        font-size: 11px;
+    }
+    
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar a {
+        font-size: 10px;
+        padding: 0 2px;
+    }
+}
+
+/* SMALL PHONES (360px and below) */
+@media (max-width: 360px) {
+    body {
+        padding-bottom: 80px;
+    }
+    
+    .header {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .card {
+        margin: 8px;
+        padding: 10px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .box {
+        padding: 15px 10px;
+    }
+    
+    .box h2 {
+        font-size: 24px;
+    }
+    
+    table tr td {
+        padding: 8px;
+        font-size: 10px;
+    }
+    
+    .navbar a {
+        font-size: 9px;
+    }
+}
+
+
 </style>
 
 </head>
@@ -352,7 +537,7 @@ select{
             🕒 <?= $order['tanggal']; ?>
         </p>
 
-        <a href="history.php" class="btn">
+        <a href="history_admin.php" class="btn">
             📄 Lihat Riwayat
         </a>
 
